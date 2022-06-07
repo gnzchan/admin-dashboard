@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    grid-template: 1fr repeat(4, 1fr) / 1fr 5fr;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+#side {
+    grid-area: 1 / 1 / 6 / 2;
+    padding: 10px 25px;
+}
+
+.menu-option {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#side > #menu {
+    display: flex;
+    flex-direction: column;
+}
+
+#side > a > #logo {
+    display: flex;
+}
+
+#side > a > #logo > #logo-icon {
+    width: 40px;
+    height: 40px;
+    background: url('assets/cat-icon.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#side > a > #logo > h1 {
+    line-height: 0;
+}
+
+#side > #menu > * {
+    padding: 0;
+}
+
+#top {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+#top > #top-bar {
+    padding: 0 0 0 25px;
+    border: solid red;
+    display: flex;
+    align-items: center;
+}
+
+#top > #top-bar > #search {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+#top > #top-bar > #search > input {
+    width: 80%;
+}
+
+#top > #top-bar > #profile {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#top > #top-bar > #profile > a > #profile-picture {
+    min-width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: url('assets/profile-img.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#top > #bot-bar {
+    padding: 0 25px;
+    border: solid black;
+    display: flex;
+    gap: 50px;
+}
+
+#top > #bot-bar > #profile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#top > #bot-bar > #profile > a > #profile-picture {
+    min-width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: url('assets/profile-img.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#top > #bot-bar > #profile > #profile-greetings {
+    min-width: fit-content;
+} 
+
+#top > #bot-bar > #profile > #profile-greetings > * {
+    padding: 0;
+    margin: 0;
+}
+
+#top > #bot-bar > ul {
+    width: 70%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#main {
+    border: solid green;
+    grid-area: 2 / 2 / 6 / 2;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 200,
+    'opsz' 48
+}
